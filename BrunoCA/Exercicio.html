@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio2</title>
+</head>
+<body>
+    <h1>Teste de pagina html e javascript</h1>
+    <div class="funca">
+    <label for="nome">Insira seu nome aqui</label>
+    
+    <input type="text" id="nome" placeholder="digite seu Nome">
+
+    <button id="bnt-vai" type="submit">clique</button>
+
+    <p id="texto"></p>
+</div>
+    <script>
+
+    document.getElementById("bnt-vai").addEventListener("click",
+
+    function (){
+
+        let nome = document.getElementById('nome');
+
+        document.getElementById('texto').innerHTML = "Ola, "+ 'nome' +"!";
+    }
+    )
+    </script>
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+        font-family: 'Times New Roman', Times, serif;
+        background-color: #1c1c1c;
+    }
+    .funca{
+
+    }
+    h1{
+        color: bisque ;
+        font-size: 55px;
+        margin-top: 15px;
+        margin-left: 25px;
+    }
+    button{
+        background-color: aliceblue;
+        border: #1c1c1c solid;
+        border-radius: 10px;
+        padding: 5px;
+    }
+    label{
+        color: bisque;
+        border-radius: 10px;
+        padding: 5px;
+    }
+    </style>
+</body>
+</html>
