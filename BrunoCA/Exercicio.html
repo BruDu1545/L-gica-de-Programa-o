@@ -23,9 +23,10 @@
 
     function (){
 
-        let nome = document.getElementById('nome');
+        let nome = document.getElementById('nome').value;
 
-        document.getElementById('texto').innerHTML = "Ola, "+ 'nome' +"!";
+            document.getElementById('texto').innerHTML = "Ola, " + nome + " !";
+
     }
     )
     </script>
@@ -64,6 +65,11 @@
         border-radius: 15px;
         color: bisque;
         font-size:15px;
+    }
+    p{
+        color: bisque;
+        margin-top: 50px;
+        font-size: 25px;
     }
     </style>
 </body>
