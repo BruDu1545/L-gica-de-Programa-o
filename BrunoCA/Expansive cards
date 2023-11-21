@@ -7,29 +7,22 @@
 </head>
 <body>
     <div class="conteiner">
-         <div class="painel">
+         <div class="painel" style="background-image: url('https://images.unsplash.com/photo-1700359387203-d24d08d07b04?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');">
             <h3>Lugar 1</h3>
-            <img src="">
          </div>
-         <div class="painel">
+         <div class="painel" style="background-image: url('https://images.unsplash.com/photo-1682687982185-531d09ec56fc?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');">
             <h3>Lugar 2 </h3>
-            <img src="">
          </div>
-         <div class="painel">
+         <div class="painel" style="background-image: url('https://plus.unsplash.com/premium_photo-1700391373098-cd9acd1b7e7c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');">
             <h3>Lugar 3 </h3>
-            <img src="">
          </div>
-         <div class="painel">
+         <div class="painel" >
             <h3>Lugar 4 </h3>
-            <img src="">
          </div>
          <div class="painel">
             <h3>Lugar 5 </h3>
-            <img src="">
          </div>
     </div><!--conteiner-->
 </body>
-<style>
 
-</style>
 </html>
