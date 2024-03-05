@@ -1,0 +1,229 @@
+*body {
+    margin: 0;
+    padding: 0;
+}
+
+/* CABEÇALHO E TOPO */
+
+header {
+    text-align: center;
+    margin: 0;
+}
+
+.titulo_header {
+    font-size: 55px;
+    display: grid;
+    place-items: center;
+}
+
+.barra_botoes {
+    padding-top: 0;
+    margin-top: -15px;
+}
+
+.barra_botoes ul{
+    display: grid;
+    grid-template-columns: repeat(7, 170px);
+    gap: 30px;
+    justify-self: center;
+    align-items: center;
+}
+
+.barra_botoes ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+.barra_botoes ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+.barra_botoes li a:hover {
+    text-decoration: underline;
+}
+
+/* MEIO */
+
+.espaco_imagem_texto {
+    padding-top: 70px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 70px;
+    text-align: center;
+}
+
+.Imagem_do_texto {
+    width: 600px;
+    height: auto;
+}
+
+.texto_da_imagem {
+    font-size: 21px;
+}
+
+/*Informaçoes e final*/
+
+.opinioes_alunos{
+    text-align: center;
+
+    h3{
+        font-size: 35px;
+    }
+}
+
+/* Noticias */
+
+.noticias_colegio{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows:repeat(1,1fr) ;
+    gap: 25px;
+    margin: 25px;
+
+    h3{
+        font-size: 25px;
+    }
+
+    p{
+        font-size: 17px;
+    }
+
+    #Noticia1{
+        background-color: rgb(216, 216, 216);
+        padding: 10px;
+    }
+    #Noticia2{
+        background-color: rgb(216, 216, 216);
+        padding: 20px;
+    }
+}
+
+/* Projetos Escolares*/
+
+.projetos_escolares_sec{
+    margin: 25px;
+    
+    h2{
+        font-size: 30px;
+    }
+    
+    h3{
+        font-size: 25px;
+    }
+    
+    p{
+        font-size: 18px;
+    }
+
+    .futsal{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 55px);
+        justify-self: center;
+        align-items: center;
+
+        h3{
+            grid-column: span 3;
+        }
+        p{
+            grid-column: span 2;
+        }
+    }
+}
+
+.CELEM{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 55px);
+
+    h3{
+        grid-column: span 3;
+    }
+    p{
+        grid-column: span 3;
+        margin-top: 25px;
+    }
+    img{
+        margin-top: 55px;
+        margin-left: 75px;
+    }
+
+}
+
+.Edutec{
+    margin-top: 145px;
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    grid-template-rows: repeat(2);
+
+    h3{
+        grid-column: span 3;
+    }
+    p{
+        grid-column: span 2;
+    }
+    img{
+        margin-left: 200px;
+    }
+}
+
+/* Area do aluno */
+
+.area_do_aluno_sec{
+    margin: 25px;
+    
+    h3{
+        font-size: 30px;
+    }
+
+    p{
+        font-size: 18px;
+    }
+}
+  
+/* Creditos finais */
+
+.desenvolvedor{
+    margin: 25px;
+    margin: top 40px; 
+}
+
+.redes_sociais{
+    margin-right: 25px;
+    margin-left: 25px;
+}
+
+.facebook{
+    display: inline;
+
+    a{
+        color: black;
+        text-decoration: none;
+    }
+}
+
+.instagram{
+    display: inline;
+
+    a{
+        color: black;
+        text-decoration: none;
+    }
+}
+
+/* RODAPÉ */
+
+footer {
+    text-align: center;
+    border-top: black solid 2px;
+    margin-top: 30px;
+
+    img {
+        margin-top: 25px;
+    }
+}
+
+p span {
+    font-size: 10px;
+}
