@@ -1,0 +1,139 @@
+*body {
+    margin: 0;
+    padding: 0;
+}
+
+/* CABEÇALHO E TOPO */
+
+header {
+    text-align: center;
+    margin: 0;
+}
+
+.titulo_header {
+    font-size: 55px;
+    display: grid;
+    place-items: center;
+}
+
+.barra_botoes {
+    padding-top: 0;
+    margin-top: -15px;
+}
+
+.barra_botoes ul {
+    display: grid;
+    grid-template-columns: repeat(7, 170px);
+    gap: 30px;
+    justify-self: center;
+    align-items: center;
+}
+
+.barra_botoes ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+.barra_botoes ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+.barra_botoes li a:hover {
+    text-decoration: underline;
+}
+
+/* MEIO */
+
+.tudo {
+    margin: 25px;
+}
+
+.endereco {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 100px;
+}
+
+/*Formulario*/
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h1 {
+        font-size: 55px;
+    }
+}
+
+label {
+    margin: 10px 0;
+    font-size: 20px;
+}
+
+input,
+textarea {
+    font-size:20px ;
+    margin: 5px 0;
+    padding: 12px;
+    width: 500px;
+    resize: none;
+}
+
+button{
+    margin-top: 30px;
+    margin-bottom: 75px;
+    font-size: 20px;
+    padding: 15px;
+    width: 200px;
+    background-color: #444;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: blue;
+}
+
+/* REDES SOCIAIS */
+
+.redes_sociais {
+    margin-right: 25px;
+    margin-left: 25px;
+}
+
+.facebook {
+    display: inline;
+
+    a {
+        color: black;
+        text-decoration: none;
+    }
+}
+
+.instagram {
+    display: inline;
+
+    a {
+        color: black;
+        text-decoration: none;
+    }
+}
+
+/* RODAPÉ */
+
+footer {
+    text-align: center;
+    border-top: black solid 2px;
+    margin-top: 30px;
+
+    img {
+        margin-top: 25px;
+    }
+}
+
+p span {
+    font-size: 10px;
+}
