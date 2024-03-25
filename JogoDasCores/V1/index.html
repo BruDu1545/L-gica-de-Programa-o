@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+    <title>Jogo das Cores</title>
+    <style></style>
+  </head>
+  <body onload="criarJogo()">
+    <header>
+      <h1>Bem indo, ao jogo de cores</h1>
+      <h3>Seu objetivo e acertar a cor de acordo com o (RGB)</h3>
+    </header>
+    <div class="codergb">
+      <h2 id="rgbinicial"></h2>
+    </div>
+    <!-- codergb -->
+    <div class="conteiner">
+      <button onclick="vereficarCor()" id="elemento"></button>
+      <button onclick="vereficarCor()" id="elemento"></button>
+      <button onclick="vereficarCor()" id="elemento"></button>
+      <button onclick="vereficarCor()" id="elemento"></button>
+      <button onclick="vereficarCor()" id="elemento"></button>
+      <button onclick="vereficarCor()" id="elemento"></button>
+    </div>
+    <!-- Conteiner -->
+    <p id="resultado"></p>
+  </body>
+</html>

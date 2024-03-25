@@ -1,0 +1,54 @@
+body{
+    background-color: rgb(28, 28, 28);
+    margin: 0;
+}
+
+header{
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    background-color: black;
+}
+
+h1{
+    color: aliceblue;
+}
+
+#rgbinicial{
+    display: flex;
+    justify-content:center;
+    text-align: center;
+    font-size: 50px;
+    color: yellowgreen;
+}
+
+h3{
+    color: aliceblue;
+}
+
+.conteiner{
+    display: flex;
+    justify-content: center;
+}
+
+#elemento{
+    padding: 50px;
+    margin: 25px;
+    border: none ;
+    border-radius: 15px;
+    background-color: rgb(122, 42, 42);
+    cursor:pointer;
+    transition: transform 1s ease;
+}
+
+#elemento:hover{
+    transform: scale(1.1);
+}
+
+p{
+    color: white;
+    font-size: 25px;
+    text-align:center;
+    display: flex;
+    justify-content: center;
+}
