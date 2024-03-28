@@ -1,0 +1,85 @@
+body {
+    background-color: rgb(28, 28, 28);
+    margin: 0;
+}
+
+header {
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    background-color: black;
+}
+
+h1 {
+    color: aliceblue;
+}
+
+#rgbinicial {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 50px;
+    color: yellowgreen;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
+h3 {
+    color: aliceblue;
+}
+
+nav {
+    background-color: blue;
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content:flex-end;
+    height: 20px;
+}
+
+nav ul li {
+    color: aliceblue;
+    font-size: 20px;
+    margin-right: 8.5%;
+    transition: transform 1s ease;
+    cursor: pointer;
+}
+
+nav ul li:hover {
+    color: blue;
+    background-color: aliceblue;
+}
+
+#Reniciar {
+    font-size: 20px;
+}
+
+#conteiner {
+    display: grid;
+    grid-template-columns: repeat(3, 20%);
+    justify-content: center;
+}
+
+#elemento {
+    padding: 100px;
+    margin: 25px;
+    border: none;
+    border-radius: 15px;
+    background-color: rgb(122, 42, 42);
+    cursor: pointer;
+    transition: transform 1s ease;
+}
+
+#elemento:hover {
+    transform: scale(1.1);
+}
+
+p {
+    color: white;
+    font-size: 20px;
+}
