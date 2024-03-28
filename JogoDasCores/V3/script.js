@@ -52,17 +52,32 @@ function vereficarCor() {
     elementos.forEach(function (elemento) {
         // Cria uma função caso haja clique
         elemento.addEventListener("click", function () {
-            if (elemento.style.backgroundColor === textoRgb) {
-                //exibe a mensagem de vitoria
-                document.getElementById("resultado").innerText =
-                    "Parabéns voce acertou.";
-            } else {
-                //Troca a cor de fundo do elemento clicado para a cor #1c1c1c
-                elemento.style.backgroundColor = "#1c1c1c";
-                //exibe a mensagem de erro
-                document.getElementById("resultado").innerText =
-                    "tente novamente.";
+            if (funcaoExecutada || funcao2Executada) {
+                if (elemento.style.backgroundColor === textoRgb) {
+                    //exibe a mensagem de vitoria
+                    document.getElementById("resultado").innerText =
+                        "Parabéns voce acertou.";
+                } else {
+                    //Troca a cor de fundo do elemento clicado para a cor #1c1c1c
+                    elemento.style.backgroundColor = "#1c1c1c";
+                    //exibe a mensagem de erro
+                    document.getElementById("resultado").innerText =
+                        "tente novamente.";
+                }
+            } else if (funcao3Executada) {
+                if (elemento.style.backgroundColor === hexadecimalEmRGB(textoRgb)) {
+                    //exibe a mensagem de vitoria
+                    document.getElementById("resultado").innerText =
+                        "Parabéns voce acertou.";
+                } else {
+                    //Troca a cor de fundo do elemento clicado para a cor #1c1c1c
+                    elemento.style.backgroundColor = "#1c1c1c";
+                    //exibe a mensagem de erro
+                    document.getElementById("resultado").innerText =
+                        "tente novamente.";
+                }
             }
+
         });
     });
 }
@@ -172,10 +187,11 @@ function quadradosImpossiveis() {
     TrocaFraseInicial();
     // Cria 6 quadrados quando o modo Impossivel é selecionado
 
+    // Cria 6 quadrados quando o modo difícil é selecionado
     for (let i = 0; i < 6; i++) {
         // Cria um novo elemento div para representar um quadrado
         let quadrado = document.createElement("button");
-        quadrado.id = 'elemento';// Define o id do quadrado
+        quadrado.id = "elemento"; // Define o id do quadrado
 
         // Adiciona um event listener de clique a cada quadrado criado
         quadrado.addEventListener("click", function () {
@@ -183,6 +199,20 @@ function quadradosImpossiveis() {
         });
 
         // Adiciona o quadrado ao contêiner
-        conteiner.appendChild(quadrado)
+        conteiner.appendChild(quadrado);
     }
+}
+
+function hexadecimalEmRGB(hex){
+
+     hex = hex.replace('#', '');;
+
+     r = parseInt(hex.substring(0, 2), 16);
+     g = parseInt(hex.substring(2, 4), 16);
+     b = parseInt(hex.substring(4, 6), 16);
+
+     hexRgb = "rgb(" + r + ", " + g + ", " + b + ")";
+     // Envia os numero r + g + b em uma variavel
+     return hexRgb;
+
 }
