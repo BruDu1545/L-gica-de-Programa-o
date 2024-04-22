@@ -1,37 +1,109 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="TerCor.css" />
     <title>TerCor</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <h1>Bem vindo(a), ao Tercor</h1>
+      <h1>Bem vindo(a), ao Tercor</h1>
     </header>
     <main>
-        <div class="config-colors">
-            <div class="dispay-input-color">
-                <h3 id="text-">Selecione cinco(5) cores para o jogador 2 acertar</h3>
-                <input type="text">
-            </div><!--dispay-input-color-->
-        </div><!--config-colors-->
-        <div class="display-game">
-            <div class="answer-client">
-
-            </div><!--answer-client-->
-            <div class="response-computer">
-
-            </div><!--response-computer-->
-        </div><!--display-game-->
-        <div class="restult"></div>
+      <div class="config-colors">
+        <div class="dispay-input-color">
+          <h3 id="textInitial">
+            Selecione cinco(5) cores para o jogador 2 acertar
+          </h3>
+          <div class="correct-combination">
+            <div class="color1"></div>
+            <div class="color2"></div>
+            <div class="color3"></div>
+            <div class="color4"></div>
+            <div class="color5"></div>
+          </div>
+          <!--correct-combination-->
+          <select id="select-color1">
+            <option value="red">Red</option>
+            <option value="Blue">Blue</option>
+            <option value="Orange">Orange</option>
+            <option value="Purple">Purple</option>
+            <option value="Brown">Brown</option>
+            <option value="Green">Green</option>
+            <option value="Yellow">Yellow</option>
+            <option value="Pink">Pink</option>
+            <option value="Cyan">Cyan</option></select
+          ><!--select-color1-->
+          <select id="select-color2">
+            <option value="red">Red</option>
+            <option value="Blue">Blue</option>
+            <option value="Orange">Orange</option>
+            <option value="Purple">Purple</option>
+            <option value="Brown">Brown</option>
+            <option value="Green">Green</option>
+            <option value="Yellow">Yellow</option>
+            <option value="Pink">Pink</option>
+            <option value="Cyan">Cyan</option></select
+          ><!--select-color2-->
+          <select id="select-color3">
+            <option value="red">Red</option>
+            <option value="Blue">Blue</option>
+            <option value="Orange">Orange</option>
+            <option value="Purple">Purple</option>
+            <option value="Brown">Brown</option>
+            <option value="Green">Green</option>
+            <option value="Yellow">Yellow</option>
+            <option value="Pink">Pink</option>
+            <option value="Cyan">Cyan</option></select
+          ><!--select-color3-->
+          <select id="select-color4">
+            <option value="red">Red</option>
+            <option value="Blue">Blue</option>
+            <option value="Orange">Orange</option>
+            <option value="Purple">Purple</option>
+            <option value="Brown">Brown</option>
+            <option value="Green">Green</option>
+            <option value="Yellow">Yellow</option>
+            <option value="Pink">Pink</option>
+            <option value="Cyan">Cyan</option></select
+          ><!--select-color4-->
+          <select id="select-color5">
+            <option value="red">Red</option>
+            <option value="Blue">Blue</option>
+            <option value="Orange">Orange</option>
+            <option value="Purple">Purple</option>
+            <option value="Brown">Brown</option>
+            <option value="Green">Green</option>
+            <option value="Yellow">Yellow</option>
+            <option value="Pink">Pink</option>
+            <option value="Cyan">Cyan</option></select
+          ><!--select-color5-->
+          <button class="confirm-color" onclick="confirmColorON()">
+            GO!
+          </button>
+          <button class="start-the-game" onclick="chanceColorsAndCreateGame()">
+            Iniciar jogo
+          </button>
+        </div>
+        <!--dispay-input-color-->
+      </div>
+      <!--config-colors-->
+      <div class="display-game">
+        <div class="answer-client"></div>
+        <!--answer-client-->
+        <div class="response-computer"></div>
+        <!--response-computer-->
+      </div>
+      <!--display-game-->
+      <div class="restult"></div>
+      <!--result-->
     </main>
     <footer>
-        <p>Bruno Carletto Adamczyk</p>
+      <p>Bruno Carletto Adamczyk</p>
+      <button onclick="testes()">TESTE-ME</button>
     </footer>
     <script src="TerCor.js"></script>
-</body>
-
+  </body>
 </html>
